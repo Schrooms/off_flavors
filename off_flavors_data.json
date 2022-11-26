@@ -3,66 +3,66 @@
         "nr": 1,
         "name": "Acetaldehyde",
         "description": "Groen appel(schil)" ,
-        "couses": "Te korte vergisting"
+        "causes": "Te korte vergisting"
     },
     {
         "nr": 5,
         "name": "Boterzuur",
         "description": "baby kots" ,
-        "couses": "Te lange lage temperatuur rustperioden tijdens het maischen of mout schimmel"
+        "causes": "Te lange lage temperatuur rustperioden tijdens het maischen of mout schimmel"
     },
     {
         "nr": 7,
         "name": "Contamination",
         "description": "Unknown" ,
-        "couses": "Unknown"
+        "causes": "Unknown"
     },
     {
         "nr": 8,
         "name": "DMS(dimethylsutfide)",
         "description": "Ingeblikte mais" ,
-        "couses": "Onvoldoende koken van het wort of niet snel genoeg afkoelen na het koken; bacteriële infectie"
+        "causes": "Onvoldoende koken van het wort of niet snel genoeg afkoelen na het koken; bacteriële infectie"
     },
     {
         "nr": 8,
         "name": "Diacetyl",
         "description": "Boter" ,
-        "couses": "Door gist gevormden afgebroken en soms gevormd door infecties"
+        "causes": "Door gist gevormden afgebroken en soms gevormd door infecties"
     },
     {
         "nr": 17,
         "name": "Isoamyl Acetate",
         "description": "Banaan" ,
-        "couses": "Hogere gistingstemperatuur, onvoldoende beluchting van wort/gist"
+        "causes": "Hogere gistingstemperatuur, onvoldoende beluchting van wort/gist"
     },
     {
         "nr": 20,
         "name": "Light Struck",
         "description": "stinkdier wiet" ,
-        "couses": "reactie van licht op zwavelverbindingen met iso-alpha zuren"
+        "causes": "reactie van licht op zwavelverbindingen met iso-alpha zuren"
     },
     {
         "nr": 21,
         "name": "Ethanethiol of ethyl mercaptaan",
         "description": "Afvoerput" ,
-        "couses": "Een ongezonde gist of giststerfte (autolyse)"
+        "causes": "Een ongezonde gist of giststerfte (autolyse)"
     },
     {
         "nr": 22,
         "name": "Metaal",
         "description": "Metaal achtig" ,
-        "couses": "Ijzer in brouwwater, contact met ijzer, Tetra hopextract, donkere moutsoortenof metaalionen"
+        "causes": "Ijzer in brouwwater, contact met ijzer, Tetra hopextract, donkere moutsoortenof metaalionen"
     },
     {
         "nr": 23,
         "name": "Trans-2-nonenal",
         "description": "Natte karton" ,
-        "couses": "Bewaring van het bier bijeen hogere temperatuuren leeftijd. Wordt uitgesteld door de oxidatie van het be.slag,wort en bier tot een minimum te beperken en koud te bewaren."
+        "causes": "Bewaring van het bier bijeen hogere temperatuuren leeftijd. Wordt uitgesteld door de oxidatie van het be.slag,wort en bier tot een minimum te beperken en koud te bewaren."
     },
     {
         "nr": 54,
         "name": "2,6-dichlorfenol",
         "description": "Medicinal" ,
-        "couses": "Contaminatie door restanten chloorhoudende ontsmettingsmiddelen. Reageren met bier polyfenolen en vormen chloorfenolen"
+        "causes": "Contaminatie door restanten chloorhoudende ontsmettingsmiddelen. Reageren met bier polyfenolen en vormen chloorfenolen"
     }
 ]
