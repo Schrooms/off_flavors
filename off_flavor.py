@@ -1,6 +1,6 @@
 # tool for helping me to remember what off flavour do
 from json import load
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import random
 
 
@@ -12,26 +12,36 @@ class OffFlavor:
     doemens_nr: int
 
 
-@dataclass(frozen=True)
+@dataclass()
 class Question:
     wrong_options: set[str]
     off_flavor: OffFlavor
+    # shuffeld_options: list[str] = field(default=list())
+
+    def __post_init__(self):
+        self.shuffeld_options: list = list(self.wrong_options)
+        self.shuffeld_options.append(self.off_flavor.name)
+        random.shuffle(self.shuffeld_options)
 
     @property
     def question(self) -> str:
         return f'Wat proeft of ruikt naar "{self.off_flavor.description}"'
 
     def formulate(self) -> str:
-        options: list = list(self.wrong_options)
-        options.append(self.off_flavor.name)
-        random.shuffle(options)
+
 
         return f'''{self.question}
-    a: {options[0]}
-    b: {options[1]}
-    c: {options[2]}
-    d: {options[3]}
+    a: {self.shuffeld_options[0]}
+    b: {self.shuffeld_options[1]}
+    c: {self.shuffeld_options[2]}
+    d: {self.shuffeld_options[3]}
         '''
+
+    def awnser_question(self, choise: str) -> tuple[bool, str]:
+        if len(choise) == 1 and choise.lower() in ['a', 'b', 'c', 'd']:
+            if self.shuffeld_options[['a', 'b', 'c', 'd'].index(choise.lower())] == self.off_flavor.name:
+                return True, 'Correct'
+        return False, f'Nee het was: {question.off_flavor.name}'
 
 def load_off_flavors() -> set[OffFlavor]:
     with open('off_flavors_data.json', 'r') as file:
@@ -57,3 +67,6 @@ if __name__ == '__main__':
     data = load_off_flavors()
     question = generate_question(data=data)
     print(question.formulate())
+    awnser = input('antwoord: ')
+    correct, message = question.awnser_question(awnser.replace(' ', ''))
+    print(message)
