@@ -16,7 +16,6 @@ class OffFlavor:
 class Question:
     wrong_options: set[str]
     off_flavor: OffFlavor
-    # shuffeld_options: list[str] = field(default=list())
 
     def __post_init__(self):
         self.shuffeld_options: list = list(self.wrong_options)
