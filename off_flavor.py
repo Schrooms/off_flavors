@@ -40,8 +40,8 @@ class Question:
     def awnser_question(self, choise: str) -> tuple[bool, str]:
         if len(choise) == 1 and choise.lower() in ['a', 'b', 'c', 'd']:
             if self.shuffeld_options[['a', 'b', 'c', 'd'].index(choise.lower())] == self.off_flavor.name:
-                return True, 'Correct'
-        return False, f'Nee het was: {question.off_flavor.name}'
+                return True, f'Correct\n\nOorzaak:\n {self.off_flavor.causes}'
+        return False, f'Nee het was: {question.off_flavor.name}\n\nOorzaak:\n{self.off_flavor.causes}'
 
 def load_off_flavors() -> set[OffFlavor]:
     with open('off_flavors_data.json', 'r') as file:

@@ -13,9 +13,9 @@
     },
     {
         "nr": 7,
-        "name": "Contamination",
-        "description": "Unknown" ,
-        "causes": "Unknown"
+        "name": "Diacetyl & azijnzuur",
+        "description": "karnemelk" ,
+        "causes": "Ruwe materialen, vergisting, bacteriologisch verontreinigingen in het bier/proces of slecht hygiëne"
     },
     {
         "nr": 8,
@@ -24,7 +24,7 @@
         "causes": "Onvoldoende koken van het wort of niet snel genoeg afkoelen na het koken; bacteriële infectie"
     },
     {
-        "nr": 8,
+        "nr": 9,
         "name": "Diacetyl",
         "description": "Boter" ,
         "causes": "Door gist gevormden afgebroken en soms gevormd door infecties"
