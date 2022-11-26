@@ -41,7 +41,7 @@ class Question:
                 self.shuffeld_options[["a", "b", "c", "d"].index(choise.lower())]
                 == self.off_flavor.name
             ):
-                return True, f"Correct\n\nOorzaak:\n {self.off_flavor.causes}"
+                return True, f"Correct\n\nOorzaak:\n{self.off_flavor.causes}"
         return (
             False,
             f"Nee het was: {question.off_flavor.name}\n\nOorzaak:\n{self.off_flavor.causes}",
