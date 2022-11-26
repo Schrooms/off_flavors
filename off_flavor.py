@@ -28,8 +28,6 @@ class Question:
         return f'Wat proeft of ruikt naar "{self.off_flavor.description}"'
 
     def formulate(self) -> str:
-
-
         return f'''{self.question}
     a: {self.shuffeld_options[0]}
     b: {self.shuffeld_options[1]}
